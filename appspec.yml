@@ -5,6 +5,4 @@ files:
     destination: /var/www/html/swaggerpages/
 hooks:
   BeforeInstall:
-      runas: root
   ApplicationStop:
-      runas: root
