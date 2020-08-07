@@ -4,18 +4,18 @@ files:
   - source: /
     destination: /var/www/html/swaggerpages/
     except:
-    owner: apache
-    group: ec2-user
+    owner: ec2-user
+    group: apache
 permissions:
   - object: /var/www/html/swaggerpages
-    owner: apache
-    group: ec2-user
+    owner: ec2-user
+    group: apache
     mode: 755
     type:
       - directory
   - object: /var/www/html/swaggerpages
-    owner: apache
-    group: ec2-user
+    owner: ec2-user
+    group: apache
     type:
       - file
 hooks:
