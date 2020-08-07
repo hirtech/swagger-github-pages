@@ -1,8 +1,23 @@
 version: 0.0
 os: linux
 files:
-  - source:  /
+  - source: /
     destination: /var/www/html/swaggerpages/
+    except:
+    owner: apache
+    group: ec2-user
+permissions:
+  - object: /var/www/html/swaggerpages
+    owner: apache
+    group: ec2-user
+    mode: 755
+    type:
+      - directory
+  - object: /var/www/html/swaggerpages
+    owner: apache
+    group: ec2-user
+    type:
+      - file
 hooks:
   BeforeInstall:
   ApplicationStop:
