@@ -16,6 +16,7 @@ permissions:
   - object: /var/www/html/swaggerpages
     owner: ec2-user
     group: apache
+    mode: 755
     type:
       - file
 hooks:
