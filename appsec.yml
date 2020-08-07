@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /index.html
+    destination: /var/www/html/swaggerpages/
+hooks:
+  BeforeInstall:
+      runas: root
+  ApplicationStop:
+      runas: root
